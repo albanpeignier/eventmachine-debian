@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/ruby-pkg-tools/1/class/ruby-setup-rb.mk
+
+ruby_ver = 1.8
+
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/docs/DEFERRABLES
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/docs/EPOLL
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/docs/KEYBOARD
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/docs/LIGHTWEIGHT_CONCURRENCY
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/docs/PURE_RUBY
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/README
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/docs/RELEASE_NOTES
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/docs/SMTP
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/docs/SPAWNED_PROCESSES
+DEB_INSTALL_DOCS_libeventmachine-ruby-doc += $(DEB_SRCDIR)/docs/TODO
+
+

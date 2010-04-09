@@ -1,0 +1,63 @@
+Source: libeventmachine-ruby
+Section: ruby
+Priority: optional
+Maintainer: Daigo Moriwaki <daigo@debian.org>
+Uploaders: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>, Ryan Niebur <ryanryan52@gmail.com>
+Build-Depends: cdbs, debhelper (>= 7), ruby-pkg-tools, ruby1.8-dev 
+Standards-Version: 3.8.1
+Homepage: http://rubyeventmachine.com/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-ruby-extras/packages/libeventmachine-ruby
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-ruby-extras/packages/libeventmachine-ruby
+
+Package: libeventmachine-ruby1.8
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libeventmachine-ruby-doc
+Description: Event-driven I/O library for high-performance threaded network programming
+ EventMachine implements a fast, single-threaded engine for arbitrary network
+ communications. It's extremely easy to use in Ruby. EventMachine wraps all
+ interactions with IP sockets, allowing programs to concentrate on the
+ implementation of network protocols. It can be used to create both network
+ servers and clients. To create a server or client, a Ruby program only needs
+ to specify the IP address and port, and provide a Module that implements the
+ communications protocol. Implementations of several standard network protocols
+ are provided with the package, primarily to serve as examples. The real goal
+ of EventMachine is to enable programs to easily interface with other programs
+ using TCP/IP, especially if custom protocols are required.
+
+Package: libeventmachine-ruby
+Architecture: all
+Depends: libeventmachine-ruby1.8 (>= ${source:Version}), libeventmachine-ruby1.8 (<< ${source:Version}.1~), ${misc:Depends}
+Description: Event-driven I/O library for high-performance threaded network programming
+ EventMachine implements a fast, single-threaded engine for arbitrary network
+ communications. It's extremely easy to use in Ruby. EventMachine wraps all
+ interactions with IP sockets, allowing programs to concentrate on the
+ implementation of network protocols. It can be used to create both network
+ servers and clients. To create a server or client, a Ruby program only needs
+ to specify the IP address and port, and provide a Module that implements the
+ communications protocol. Implementations of several standard network protocols
+ are provided with the package, primarily to serve as examples. The real goal
+ of EventMachine is to enable programs to easily interface with other programs
+ using TCP/IP, especially if custom protocols are required.
+ .
+ This is a dependency package which depends on Debian's default Ruby version
+ (currently 1.8.x).
+
+Package: libeventmachine-ruby-doc
+Section: doc
+Architecture: all
+Suggests: libeventmachine-ruby
+Depends: ${misc:Depends}
+Description: Event-driven I/O library for high-performance threaded network programming
+ EventMachine implements a fast, single-threaded engine for arbitrary network
+ communications. It's extremely easy to use in Ruby. EventMachine wraps all
+ interactions with IP sockets, allowing programs to concentrate on the
+ implementation of network protocols. It can be used to create both network
+ servers and clients. To create a server or client, a Ruby program only needs
+ to specify the IP address and port, and provide a Module that implements the
+ communications protocol. Implementations of several standard network protocols
+ are provided with the package, primarily to serve as examples. The real goal
+ of EventMachine is to enable programs to easily interface with other programs
+ using TCP/IP, especially if custom protocols are required.
+ .
+ This package contains documentations.

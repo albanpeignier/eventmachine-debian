@@ -1,0 +1,35 @@
+libeventmachine-ruby (0.12.10-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Alban Peignier <alban@tryphon.eu>  Tue, 16 Feb 2010 20:52:26 +0100
+
+libeventmachine-ruby (0.12.6-1) unstable; urgency=low
+
+  * New upstream version
+  * add myself to uploaders
+  * change Section to ruby
+  * change the -ruby and -doc packages to Architecture all as they are
+    architecture independent
+    - change the versioned dependency to make it binnmu-able
+  * fix copyright for debian packaging in debian/copyright
+  * depend on ${misc:Depends} for all packages
+  * debian policy 3.8.1
+  * update Vcs-* fields for the move from packages-wip to package
+  * update upstream copyright to 2008, as some files say that year
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Fri, 24 Apr 2009 21:49:36 -0700
+
+libeventmachine-ruby (0.12.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Initial release to Debian. (Closes: #501450)
+
+
+ -- Daigo Moriwaki <daigo@debian.org>  Sat, 21 Feb 2009 09:14:28 +0900
+
+libeventmachine-ruby (0.12.2-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Daigo Moriwaki <daigo@debian.org>  Tue, 07 Oct 2008 22:29:37 +0900

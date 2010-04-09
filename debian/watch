@@ -1,0 +1,5 @@
+# See uscan(1) for format
+version=3
+
+http://rubyforge.org/frs/?group_id=1555&release_id=31185 \
+    /frs/download.php/\d+/eventmachine-([\d\.]*)\.tar\.gz
